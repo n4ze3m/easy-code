@@ -34,16 +34,16 @@ class _HomeScreenWebState extends State<HomeScreenWeb> {
               color: Colors.white, fontWeight: FontWeight.bold),
         ),
         actions: [
-          IconButton(
-            icon: Icon(Icons.play_arrow),
-            color: Colors.white,
-            tooltip: 'Run code',
+          ElevatedButton.icon(
             onPressed: () {
+             
               setState(() {
-                output = generateCode(
-                    widget.controllerHtml.text, widget.controllerCss.text, widget.controllerJs.text);
+                output = generateCode(widget.controllerHtml.text,
+                    widget.controllerCss.text, widget.controllerJs.text);
               });
             },
+            icon: Icon(Icons.play_arrow),
+            label: Text('Run'),
           )
         ],
       ),
