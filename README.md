@@ -1,6 +1,6 @@
 # easycode
 
-A new Flutter project.
+
 
 ## Getting Started
 
